@@ -1,3 +1,7 @@
 {
-  "dev": "Full-stack Developer from Hungary"
+  "dev": "Full-stack Developer from Hungary",
+  "about_me": "About me",
+  "blog": "Blog",
+  "portfolio": "Portfolio",
+  "contact_me": "Contact me"
 }

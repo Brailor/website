@@ -15,10 +15,10 @@ function Home(props: HomeProps) {
         <p>{t('dev')}</p>
         <p>
           <Link href="/posts/bio">
-            <a>About me</a>
+            <a>{t('about_me')}</a>
           </Link>
         </p>
-        <button onClick={() => i18n.changeLanguage('hu')}>Change language</button>
+        <button onClick={() => i18n.changeLanguage(i18n.language === 'hu' ? 'en' : 'hu')}>Change language</button>
       </section>
     </Layout>
   );

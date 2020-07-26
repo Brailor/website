@@ -23,3 +23,13 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active {
+  font-weight: bold;
+}

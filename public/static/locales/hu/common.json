@@ -1,3 +1,7 @@
 {
-  "dev": "Full-stack fejlesztő Magyarországból"
+  "dev": "Full-stack fejlesztő Magyarországból",
+  "about_me": "Rólam",
+  "blog": "Blog",
+  "portfolio": "Portfolio",
+  "contact_me": "Elérhetőség"
 }
