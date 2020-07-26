@@ -3,16 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "date-fns": "^2.11.1",
+    "express": "^4.17.1",
     "gray-matter": "^4.0.2",
+    "i18next": "^19.6.3",
     "next": "9.3.5",
+    "next-i18next": "^4.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-i18next": "^11.7.0",
     "remark": "^12.0.0",
     "remark-html": "^11.0.1"
   },

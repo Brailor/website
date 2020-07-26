@@ -2,14 +2,21 @@ import Head from 'next/head';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Navbar from './navbar';
 
 const name = 'Viktor Ohád';
-export const siteTitle = 'Next.js Sample Website';
+const title = 'Ohád Viktor';
 
-export default function Layout({ children, home }) {
+type LayoutProps = {
+  children: React.ReactChild | React.ReactChild[];
+  siteTitle?: string;
+  home?: boolean;
+};
+export default function Layout({ children, home = false, siteTitle = title }: LayoutProps) {
   return (
     <div className={styles.container}>
       <Head>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Learn how to build a personal website using Next.js" />
         <meta
@@ -22,6 +29,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        <Navbar></Navbar>
         {home ? (
           <>
             <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name} />
